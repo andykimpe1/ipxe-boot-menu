@@ -22,15 +22,15 @@ item exit              	Exit
 choose --timeout ${menu-timeout} --default ${menu-default} target && goto ${target}
 
 :item1
-kernel https://github.com/andykimpe1/ipxe-boot-menu/releases/download/download/xubuntu-20.04.6-desktop-amd64-vmlinuz initrd=xubuntu-20.04.6-desktop-amd64-initrd ip=dhcp url=https://cdimage.ubuntu.com/xubuntu/releases/focal/release/xubuntu-20.04.6-desktop-amd64.iso debian-installer/locale=fr_FR.UTF-8 debian-installer/language=fr kbd-chooser/method=fr console-setup/layoutcode=fr
-initrd https://github.com/andykimpe1/ipxe-boot-menu/releases/download/download/xubuntu-20.04.6-desktop-amd64-initrd
+kernel http://fr.archive.ubuntu.com/ubuntu/dists/focal/main/installer-amd64/current/legacy-images/netboot/ubuntu-installer/amd64/linux initrd=initrd.gz ip=dhcp url=https://cdimage.ubuntu.com/xubuntu/releases/focal/release/xubuntu-20.04.6-desktop-amd64.iso debian-installer/locale=fr_FR.UTF-8 debian-installer/language=fr kbd-chooser/method=fr console-setup/layoutcode=fr
+initrd http://fr.archive.ubuntu.com/ubuntu/dists/focal/main/installer-amd64/current/legacy-images/netboot/ubuntu-installer/amd64/initrd.gz
 boot
 
 
 
 :item2
-kernel https://fr.archive.ubuntu.com/ubuntu/dists/focal/main/installer-amd64/current/legacy-images/netboot/ubuntu-installer/amd64/linux initrd=initrd.gz ip=dhcp
-initrd https://fr.archive.ubuntu.com/ubuntu/dists/focal/main/installer-amd64/current/legacy-images/netboot/ubuntu-installer/amd64/initrd.gz
+kernel http://fr.archive.ubuntu.com/ubuntu/dists/focal/main/installer-amd64/current/legacy-images/netboot/ubuntu-installer/amd64/linux initrd=initrd.gz ip=dhcp
+initrd http://fr.archive.ubuntu.com/ubuntu/dists/focal/main/installer-amd64/current/legacy-images/netboot/ubuntu-installer/amd64/initrd.gz
 boot
 
 :item3
