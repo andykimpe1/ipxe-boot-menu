@@ -16,7 +16,7 @@ item item3              Fedora 32 Live
 item --gap --           -------------SEPARATION 4----------
 item item4              Fedora 32 install
 item --gap --           -------------SEPARATION 5----------
-item item4              Fedora 32 install
+item item5              Xubuntu 20.04 Live 2
 item --gap --           -------------SEPARATION 6----------
 item shell              Shell iPXE
 item --gap --           -------------SEPARATION 7----------------
