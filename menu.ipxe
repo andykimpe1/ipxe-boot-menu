@@ -20,11 +20,7 @@ item item5              Ubuntu 24.04 Live 1
 item --gap --           -------------SEPARATION 6----------
 item item6              Ubuntu 24.04 Live 2 
 item --gap --           -------------SEPARATION 7----------
-item item7              Ubuntu 24.04 Live 3 
-item --gap --           -------------SEPARATION 7----------
-item item8              Ubuntu 24.04 Live 4 
-item --gap --           -------------SEPARATION 7----------
-item item9              netboot online
+item item7              netboot online
 item --gap --           -------------SEPARATION 8----------
 item shell              Shell iPXE
 item --gap --           -------------SEPARATION 9----------------
