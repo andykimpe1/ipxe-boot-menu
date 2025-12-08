@@ -22,8 +22,8 @@ item exit              	Exit
 choose --timeout ${menu-timeout} --default ${menu-default} target && goto ${target}
 
 :item1
-kernel http://152.228.217.42/xubuntu2004/vmlinuz initrd=initrd ip=dhcp url=http://152.228.217.42/redirect/ubuntu2004/Custom.iso debian-installer/locale=fr_FR.UTF-8 debian-installer/language=fr kbd-chooser/method=fr console-setup/layoutcode=fr
-initrd http://152.228.217.42/xubuntu2004/initrd
+kernel https://archive.ubuntu.com/ubuntu/dists/focal/main/uefi/linux-amd64/current/vmlinuz-4.15.0-15-generic.efi initrd=initrd.gz ip=dhcp url=https://cdimage.ubuntu.com/xubuntu/releases/focal/release/xubuntu-20.04.6-desktop-amd64.iso debian-installer/locale=fr_FR.UTF-8 debian-installer/language=fr kbd-chooser/method=fr console-setup/layoutcode=fr
+initrd https://archive.ubuntu.com/ubuntu/dists/focal/main/installer-amd64/current/legacy-images/cdrom/initrd.gz
 boot
 
 
