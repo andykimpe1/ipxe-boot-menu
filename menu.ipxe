@@ -16,7 +16,7 @@ item item3              Fedora 32 Live
 item --gap --           -------------SEPARATION 4----------
 item item4              Fedora 32 install
 item --gap --           -------------SEPARATION 5----------
-item item5              Xubuntu 20.04 Live
+item item5              Xubuntu 24.04 Live
 item --gap --           -------------SEPARATION 6----------
 item item6              netboot online
 item --gap --           -------------SEPARATION 7----------
@@ -27,7 +27,8 @@ item exit              	Exit
 choose --timeout ${menu-timeout} --default ${menu-default} target && goto ${target}
 
 :item1
-chain https://raw.githubusercontent.com/andykimpe1/ipxe-boot-menu/refs/heads/main/menu2.ipxe
+kernel https://github.com/andykimpe1/ipxe-boot-menu/releases/download/download/xubuntu-20.04.6-desktop-amd64-vmlinuz initrd=xubuntu-20.04.6-desktop-amd64-initrd ip=dhcp url=https://cdimage.ubuntu.com/xubuntu/releases/focal/release/xubuntu-20.04.6-desktop-amd64.iso  debian-installer/locale=fr_FR.UTF-8 debian-installer/language=fr kbd-chooser/method=fr console-setup/layoutcode=fr
+initrd https://github.com/andykimpe1/ipxe-boot-menu/releases/download/download/xubuntu-20.04.6-desktop-amd64-initrd
 boot
 
 
@@ -49,8 +50,8 @@ boot
 
 
 :item5
-kernel https://github.com/andykimpe1/ipxe-boot-menu/releases/download/download/xubuntu-20.04.6-desktop-amd64-vmlinuz initrd=xubuntu-20.04.6-desktop-amd64-initrd ip=dhcp url=https://cdimage.ubuntu.com/xubuntu/releases/focal/release/xubuntu-20.04.6-desktop-amd64.iso  debian-installer/locale=fr_FR.UTF-8 debian-installer/language=fr kbd-chooser/method=fr console-setup/layoutcode=fr
-initrd https://github.com/andykimpe1/ipxe-boot-menu/releases/download/download/xubuntu-20.04.6-desktop-amd64-initrd
+kernel https://github.com/netbootxyz/ubuntu-squash/releases/download/24.04.3-dac09526/vmlinuz initrd=initrd ip=dhcp url=https://cdimage.ubuntu.com/xubuntu/releases/24.04.3/release/xubuntu-24.04.3-desktop-amd64.iso
+initrd https://github.com/netbootxyz/ubuntu-squash/releases/download/24.04.3-dac09526/initrd
 boot
 #chain https://raw.githubusercontent.com/andykimpe1/ipxe-boot-menu/refs/heads/main/netboot/menu.ipxe
 
