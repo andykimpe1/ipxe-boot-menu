@@ -24,7 +24,7 @@ echo
 echo Running version.....${version}
 echo Updated version.....${latest_version}
 echo
-echo Please download the latest version from netboot.xyz.
+echo Please download the latest version from .
 echo
 echo Attempting to chain to latest version...
 chain --autofree http://${boot_domain}/ipxe/${ipxe_disk} ||
@@ -60,8 +60,6 @@ item shell ${space} iPXE shell
 item netinfo ${space} Network card info
 iseq ${menu_pci} 1 && item lspci ${space} PCI Device List ||
 item about ${space} About netboot.xyz
-item --gap Signature Checks:
-item sig_check ${space} netboot.xyz [ enabled: ${sigs_enabled} ]
 isset ${github_user} && item --gap Custom Github Menu: ||
 isset ${github_user} && item custom-github ${space} ${github_user}'s Custom Menu ||
 isset ${custom_url} && item --gap Custom URL Menu: ||
