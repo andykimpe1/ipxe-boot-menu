@@ -26,7 +26,7 @@ choose --timeout ${menu-timeout} --default ${menu-default} target && goto ${targ
 
 :item1
 chain https://raw.githubusercontent.com/andykimpe1/ipxe-boot-menu/refs/heads/main/menu.ipxe
-
+boot
 
 
 :item2
