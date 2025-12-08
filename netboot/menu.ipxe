@@ -5,7 +5,7 @@ isset ${arch} && goto skip_arch_detect ||
 cpuid --ext 29 && set arch x86_64 || set arch i386
 iseq ${buildarch} arm64 && set arch arm64 ||
 :skip_arch_detect
-chain --autofree boot.cfg ||
+chain --autofree https://raw.githubusercontent.com/andykimpe1/ipxe-boot-menu/refs/heads/main/netboot/boot.cfg ||
 echo Attempting to retrieve latest upstream version number...
 chain --timeout 5000 https://boot.netboot.xyz/version.ipxe ||
 ntp 0.pool.ntp.org ||
