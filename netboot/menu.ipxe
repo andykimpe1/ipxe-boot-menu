@@ -1,5 +1,7 @@
 #!ipxe
 
+set sigs_enabled false
+
 :start
 isset ${arch} && goto skip_arch_detect ||
 cpuid --ext 29 && set arch x86_64 || set arch i386
