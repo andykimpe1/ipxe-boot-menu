@@ -7,6 +7,7 @@ goto ${menu}
 
 :ubuntu
 set os Ubuntu
+set arch x86_64
 set os_arch ${arch}
 iseq ${os_arch} x86_64 && set os_arch amd64 ||
 iseq ${os_arch} arm64 && set os_arch arm64 ||
