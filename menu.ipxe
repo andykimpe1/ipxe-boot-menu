@@ -22,7 +22,7 @@ item exit              	Exit
 choose --timeout ${menu-timeout} --default ${menu-default} target && goto ${target}
 
 :item1
-kernel http://fr.archive.ubuntu.com/ubuntu/dists/focal/main/installer-amd64/current/legacy-images/netboot/ubuntu-installer/amd64/linux initrd=initrd.gz ip=dhcp url=https://cdimage.ubuntu.com/xubuntu/releases/focal/release/xubuntu-20.04.6-desktop-amd64.iso debian-installer/locale=fr_FR.UTF-8 debian-installer/language=fr kbd-chooser/method=fr console-setup/layoutcode=fr
+kernel http://fr.archive.ubuntu.com/ubuntu/dists/focal/main/installer-amd64/current/legacy-images/netboot/ubuntu-installer/amd64/linux root=/dev/ram0 ramdisk_size=1500000 initrd=initrd.gz ip=dhcp url=https://cdimage.ubuntu.com/xubuntu/releases/focal/release/xubuntu-20.04.6-desktop-amd64.iso debian-installer/locale=fr_FR.UTF-8 debian-installer/language=fr kbd-chooser/method=fr console-setup/layoutcode=fr
 initrd http://fr.archive.ubuntu.com/ubuntu/dists/focal/main/installer-amd64/current/legacy-images/netboot/ubuntu-installer/amd64/initrd.gz
 boot
 
