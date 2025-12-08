@@ -64,7 +64,7 @@ initrd https://github.com/andykimpe1/ipxe-boot-menu/releases/download/ubuntu-24.
 boot
 
 :item7
-chain --autofree http://boot.netboot.xyz/ipxe/netboot.xyz.efi
+chain --autofree https://boot.netboot.xyz/ipxe/netboot.xyz.lkrn
 
 :shell
 shell
