@@ -16,11 +16,15 @@ item item3              Fedora 32 Live
 item --gap --           -------------SEPARATION 4----------
 item item4              Fedora 32 install
 item --gap --           -------------SEPARATION 5----------
-item item5              Ubuntu 24.04 Live iso
+item item5              Ubuntu 24.04 Live 1
 item --gap --           -------------SEPARATION 6----------
-item item6              Ubuntu 24.04 Live squashfs 
+item item6              Ubuntu 24.04 Live 2 
 item --gap --           -------------SEPARATION 7----------
-item item7              netboot online
+item item7              Ubuntu 24.04 Live 3 
+item --gap --           -------------SEPARATION 7----------
+item item8              Ubuntu 24.04 Live 4 
+item --gap --           -------------SEPARATION 7----------
+item item9              netboot online
 item --gap --           -------------SEPARATION 8----------
 item shell              Shell iPXE
 item --gap --           -------------SEPARATION 9----------------
@@ -59,8 +63,8 @@ boot
 
 
 :item6
-kernel https://github.com/netbootxyz/ubuntu-squash/releases/download/24.04.3-dac09526/vmlinuz initrd=initrd ip=dhcp boot=casper netboot=url url=https://github.com/andykimpe1/ipxe-boot-menu/releases/download/download/ubuntu-24.04.3-desktop-amd64-minimal.squashfs
-initrd https://github.com/netbootxyz/ubuntu-squash/releases/download/24.04.3-dac09526/initrd
+kernel https://github.com/andykimpe1/ipxe-boot-menu/releases/download/ubuntu-24.04.3-desktop-arm64/vmlinuz ip=dhcp boot=casper netboot=url url=https://github.com/andykimpe1/ipxe-boot-menu/releases/download/ubuntu-24.04.3-desktop-arm64/filesystem.squashfs initrd=initrd
+initrd https://github.com/andykimpe1/ipxe-boot-menu/releases/download/ubuntu-24.04.3-desktop-arm64/initrd
 boot
 
 :item7
