@@ -3,7 +3,7 @@
 #set menu-timeout 90000
 set menu-timeout 20000
 set submenu-timeout ${menu-timeout}
-isset ${menu-default} || set menu-default item1 
+isset ${menu-default} || set menu-default item1
 
 
 menu
