@@ -8,16 +8,14 @@ goto ${menu}
 :ubuntu
 set os Ubuntu
 set arch x86_64
-set os_arch ${arch}
-iseq ${os_arch} x86_64 && set os_arch amd64 ||
-iseq ${os_arch} arm64 && set os_arch arm64 ||
+set os_arch amd64
 clear ubuntu_version
 clear install_type
 clear older_release
 clear install_url
 set install_type sub
 set install_priority critical
-menu ${os} - ${os_arch}
+menu Ubuntu - amd64
 item --gap Latest Releases
 item questing ${space} ${os} 25.10 Questing Quokka
 item plucky ${space} ${os} 25.04 Plucky Puffin
