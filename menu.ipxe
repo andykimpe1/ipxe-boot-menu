@@ -27,7 +27,7 @@ choose --timeout ${menu-timeout} --default ${menu-default} target && goto ${targ
 :item1
 kernel https://github.com/andykimpe1/ipxe-boot-menu/releases/download/download/xubuntu-20.04.6-desktop-amd64-vmlinuz
 initrd https://github.com/andykimpe1/ipxe-boot-menu/releases/download/download/xubuntu-20.04.6-desktop-amd64-initrd
-imgargs root=/dev/ram0 ramdisk_size=1500000 initrd=xubuntu-20.04.6-desktop-amd64-initrd ip=dhcp url=https://cdimage.ubuntu.com/xubuntu/releases/focal/release/xubuntu-20.04.6-desktop-amd64.iso debian-installer/locale=fr_FR.UTF-8 debian-installer/language=fr kbd-chooser/method=fr console-setup/layoutcode=fr
+imgargs root=/dev/ram0 ramdisk_size=3500000 initrd=xubuntu-20.04.6-desktop-amd64-initrd ip=dhcp url=https://cdimage.ubuntu.com/xubuntu/releases/focal/release/xubuntu-20.04.6-desktop-amd64.iso debian-installer/locale=fr_FR.UTF-8 debian-installer/language=fr kbd-chooser/method=fr console-setup/layoutcode=fr
 boot
 
 
