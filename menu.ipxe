@@ -16,8 +16,10 @@ item item3              Fedora 32 Live
 item --gap --           -------------SEPARATION 4----------
 item item4              Fedora 32 install
 item --gap --           -------------SEPARATION 5----------
+item item4              Fedora 32 install
+item --gap --           -------------SEPARATION 6----------
 item shell              Shell iPXE
-item --gap --           -------------SEPARATION 5----------------
+item --gap --           -------------SEPARATION 7----------------
 item exit              	Exit
 
 choose --timeout ${menu-timeout} --default ${menu-default} target && goto ${target}
@@ -44,6 +46,12 @@ boot
 kernel http://152.228.217.42/fedora32/netboot/vmlinuz initrd=initrd.img inst.repo=https://dl.fedoraproject.org/pub/fedora/linux/releases/33/Everything/x86_64/os/
 initrd http://152.228.217.42/fedora32/netboot/initrd.img
 boot
+
+
+:item5
+kernel https://github.com/andykimpe1/ipxe-boot-menu/releases/download/download/xubuntu-20.04.6-desktop-amd64-vmlinuz
+initrd https://github.com/andykimpe1/ipxe-boot-menu/releases/download/download/xubuntu-20.04.6-desktop-amd64-initrd
+imgargs initrd=xubuntu-20.04.6-desktop-amd64-initrd ip=dhcp url=https://cdimage.ubuntu.com/xubuntu/releases/focal/release/xubuntu-20.04.6-desktop-amd64.iso
 
 :shell
 shell
