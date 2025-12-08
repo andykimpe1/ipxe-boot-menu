@@ -29,8 +29,8 @@ boot
 
 
 :item2
-kernel http://fr.archive.ubuntu.com/ubuntu/dists/focal/main/installer-amd64/current/legacy-images/netboot/ubuntu-installer/amd64/linux initrd=initrd.gz ip=dhcp
-initrd http://fr.archive.ubuntu.com/ubuntu/dists/focal/main/installer-amd64/current/legacy-images/netboot/ubuntu-installer/amd64/initrd.gz
+kernel https://fr.archive.ubuntu.com/ubuntu/dists/focal/main/installer-amd64/current/legacy-images/netboot/ubuntu-installer/amd64/linux initrd=initrd.gz ip=dhcp
+initrd https://fr.archive.ubuntu.com/ubuntu/dists/focal/main/installer-amd64/current/legacy-images/netboot/ubuntu-installer/amd64/initrd.gz
 boot
 
 :item3
