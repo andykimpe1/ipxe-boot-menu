@@ -25,7 +25,8 @@ item exit              	Exit
 choose --timeout ${menu-timeout} --default ${menu-default} target && goto ${target}
 
 :item1
-chain https://raw.githubusercontent.com/andykimpe1/ipxe-boot-menu/refs/heads/main/ubuntu/ubuntu.ipxe
+chain https://raw.githubusercontent.com/andykimpe1/ipxe-boot-menu/refs/heads/main/menu2.ipxe
+boot
 
 
 
