@@ -37,7 +37,7 @@ isset ${ip} || dhcp
 clear menu
 set space:hex 20:20
 set space ${space:string}
-isset ${menu-default} || set menu-default windows
+isset ${menu} || set menu windows
 isset ${next-server} && menu ${site_name} v${version} - next-server: ${next-server} || menu ${site_name}
 item --gap Default:
 item local ${space} Boot from local hdd0
