@@ -91,7 +91,7 @@ boot
 
 
 :item5
-kernel https://github.com/netbootxyz/asset-mirror/releases/download/0.0.3-fb924c06/vmlinuz initrd=initrd ip=dhcp root=/dev/ram0 ramdisk_size=1500000 iso-url=https://cdimage.ubuntu.com/ubuntu/releases/24.04.3/release/ubuntu-24.04.3-desktop-arm64.iso
+kernel https://github.com/netbootxyz/asset-mirror/releases/download/0.0.3-fb924c06/vmlinuz initrd=initrd ip=dhcp root=/dev/ram0 ramdisk_size=8500000 iso-url=https://cdimage.ubuntu.com/ubuntu/releases/24.04.3/release/ubuntu-24.04.3-desktop-arm64.iso
 initrd https://github.com/netbootxyz/asset-mirror/releases/download/0.0.3-fb924c06/initrd
 boot
 #chain https://raw.githubusercontent.com/andykimpe1/ipxe-boot-menu/refs/heads/main/netboot/menu.ipxe
