@@ -73,10 +73,6 @@ sudo cp /tmp/tftp/bios/com32/chain/chain.c32  /tftp/bios
 sudo cp /tmp/tftp/bios/com32/lib/libcom32.c32  /tftp/bios
 sudo cp /tmp/tftp/bios/core/pxelinux.0  /tftp/bios
 sudo cp /tmp/tftp/bios/core/lpxelinux.0  /tftp/bios
-
-
-
-
 sudo cp /tmp/tftp/grub/usr/lib/grub/x86_64-efi-signed/grubnetx64.efi.signed  /tftp/grubx64.efi
 sudo cp /tmp/tftp/shim/usr/lib/shim/shimx64.efi  /tftp/grub/bootx64.efi
 sudo mkdir /tftp/bios/pxelinux.cfg
@@ -92,11 +88,11 @@ MENU COLOR SEL      7     #ffffffff #00000000
 MENU COLOR UNSEL    37;40 #ffffffff #00000000
 MENU COLOR BORDER   37;40 #ffffffff #00000000
 
-LABEL Demarer sur le disque dur
+LABEL Start to local hdd drive
     com32 chain.c32
     append hd0
 
-LABEL Demarer ipxe pour installer votre serveur
+LABEL Start ipxe for install your system
     kernel ipxe.lkrn
 EOF
 sudo cp default /tftp/bios/pxelinux.cfg/
@@ -115,13 +111,13 @@ set menu_color_normal=white/black
 set menu_color_highlight=black/light-gray
 set timeout=60
 
-menuentry "demarer sur le disque dur" {
+menuentry "Start to local hdd drive" {
 set root=(hd0,1)
 chainloader +1
 }
 
 menuentry "Demarer ipxe pour installer votre serveur" {
-chainloader ipxe.efi
+chainloader /ipxe.efi
 }
 EOF
 sudo cp grub.cfg /tftp/grub/
@@ -141,8 +137,7 @@ sudo rm -f /tftp/boot/ipxe.lkrn && sudo cp bin/ipxe.lkrn /tftp/boot/
 sudo rm -f /tftp/ipxe.lkrn && sudo cp bin/ipxe.lkrn /tftp/
 make clean
 make bin-x86_64-efi/ipxe.efi EMBED=boot.ipxe
-sudo rm -f /tftp/bios/pxelinux.cfg/ipxe.efi && sudo cp bin-x86_64-efi/ipxe.efi /tftp/bios/pxelinux.cfg/
-sudo rm -f /tftp/bios/ipxe.efi && sudo cp bin-x86_64-efi/ipxe.efi /tftp/bios/
 sudo rm -f /tftp/boot/ipxe.efi && sudo cp bin-x86_64-efi/ipxe.efi /tftp/boot/
+sudo rm -f /tftp/grub/ipxe.efi && sudo cp bin-x86_64-efi/ipxe.efi /tftp/grub/
 sudo rm -f /tftp/ipxe.efi && sudo cp bin-x86_64-efi/ipxe.efi /tftp/
 ```
