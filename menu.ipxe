@@ -59,7 +59,7 @@ item item5              Ubuntu 24.04 Live 1
 item --gap --           -------------SEPARATION 6----------
 item item6              Ubuntu 24.04 Live 2 
 item --gap --           -------------SEPARATION 7----------
-item item7              netboot online
+item item7              netboot local
 item --gap --           -------------SEPARATION 8----------
 item shell              Shell iPXE
 item --gap --           -------------SEPARATION 9----------------
@@ -103,7 +103,7 @@ initrd https://github.com/andykimpe1/ipxe-boot-menu/releases/download/ubuntu-24.
 boot
 
 :item7
-chain --autofree https://boot.netboot.xyz/ipxe/netboot.xyz.lkrn
+chain https://raw.githubusercontent.com/andykimpe1/ipxe-boot-menu/refs/heads/main/netboot/menu.ipxe
 
 :shell
 shell
