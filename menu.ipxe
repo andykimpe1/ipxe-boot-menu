@@ -59,7 +59,7 @@ boot
 
 
 :item6
-kernel https://github.com/andykimpe1/ipxe-boot-menu/releases/download/ubuntu-24.04.3-desktop-arm64/vmlinuz ip=dhcp boot=casper netboot=url url=https://github.com/andykimpe1/ipxe-boot-menu/releases/download/ubuntu-24.04.3-desktop-arm64/filesystem.squashfs initrd=initrd
+kernel https://github.com/andykimpe1/ipxe-boot-menu/releases/download/ubuntu-24.04.3-desktop-arm64/vmlinuz ip=dhcp boot=casper netboot=url url=https://github.com/andykimpe1/ipxe-boot-menu/releases/download/ubuntu-24.04.3-desktop-arm64/filesystem.squashfs initrd=initrd console=ttyS1,115200n8
 initrd https://github.com/andykimpe1/ipxe-boot-menu/releases/download/ubuntu-24.04.3-desktop-arm64/initrd
 boot
 
