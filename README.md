@@ -5,7 +5,7 @@ build example for vmware workstation 17 on ubuntu
 ```
 cd
 sudo apt -y install gcc binutils make perl liblzma-dev mtools genisoimage syslinux git dnsmasq wget
-sudo rm -rf /tmp/tftp
+sudo rm -rf /tmp/tftp /tftp
 mkdir /tmp/tftp
 cd /tmp/tftp
 wget https://mirrors.edge.kernel.org/pub/linux/utils/boot/syslinux/syslinux-6.03.zip
