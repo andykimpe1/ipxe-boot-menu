@@ -65,7 +65,8 @@ isset ${github_user} && item --gap Custom Github Menu: ||
 isset ${github_user} && item custom-github ${space} ${github_user}'s Custom Menu ||
 isset ${custom_url} && item --gap Custom URL Menu: ||
 isset ${custom_url} && item custom-url ${space} Custom URL Menu ||
-isset ${menu} && set timeout 0 || set timeout ${boot_timeout}
+#isset ${menu} && set timeout 0 || set timeout ${boot_timeout}
+isset ${timeout} || set timeout ${boot_timeout}
 choose --timeout ${timeout} --default ${menu} menu || goto local
 echo ${cls}
 goto ${menu} ||
