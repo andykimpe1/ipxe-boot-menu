@@ -116,7 +116,7 @@ set root=(hd0,1)
 chainloader +1
 }
 
-menuentry "Demarer ipxe pour installer votre serveur" {
+menuentry "Start ipxe for install your system" {
 chainloader /ipxe.efi
 }
 EOF
