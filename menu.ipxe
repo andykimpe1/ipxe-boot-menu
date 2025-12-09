@@ -46,7 +46,7 @@ isset ${menu-default} || set menu-default item7
 
 
 menu
-item --gap --           -------------SEPARATION 1----------------
+item --gap --           -------------${platform}----------------
 item item1            	Xubuntu 22.04 Live
 item --gap --           -------------SEPARATION 2----------------
 item item2      	Ubuntu 20.04 Netboot
