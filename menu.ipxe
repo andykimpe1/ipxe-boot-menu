@@ -47,7 +47,7 @@ isset ${menu-default} || set menu-default item1
 
 menu
 item --gap --           -------------SEPARATION 1----------------
-item item1            	Xubuntu 20.04 Live
+item item1            	Xubuntu 22.04 Live
 item --gap --           -------------SEPARATION 2----------------
 item item2      	Ubuntu 20.04 Netboot
 item --gap --           -------------SEPARATION 3----------------
@@ -68,8 +68,8 @@ item exit              	Exit
 choose --timeout ${menu-timeout} --default ${menu-default} target && goto ${target}
 
 :item1
-kernel https://github.com/andykimpe1/ipxe-boot-menu/releases/download/download/xubuntu-20.04.6-desktop-amd64-vmlinuz initrd=xubuntu-20.04.6-desktop-amd64-initrd ip=dhcp url=https://cdimage.ubuntu.com/xubuntu/releases/focal/release/xubuntu-20.04.6-desktop-amd64.iso  debian-installer/locale=fr_FR.UTF-8 debian-installer/language=fr kbd-chooser/method=fr console-setup/layoutcode=fr
-initrd https://github.com/andykimpe1/ipxe-boot-menu/releases/download/download/xubuntu-20.04.6-desktop-amd64-initrd
+kernel https://github.com/andykimpe1/ipxe-boot-menu/releases/download/download/ubuntu-22.04.5-desktop-amd64-vmlinuz initrd=ubuntu-22.04.5-desktop-amd64-initrd ip=dhcp url=https://cdimage.ubuntu.com/xubuntu/releases/22.04.5/release/xubuntu-22.04.5-desktop-amd64.iso  debian-installer/locale=fr_FR.UTF-8 debian-installer/language=fr kbd-chooser/method=fr console-setup/layoutcode=fr
+initrd https://github.com/andykimpe1/ipxe-boot-menu/releases/download/download/ubuntu-22.04.5-desktop-amd64-initrd
 boot
 
 
