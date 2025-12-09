@@ -1,6 +1,6 @@
 #!ipxe
 
-#set menu-timeout 90000
+#set menu-timeout 1000000
 set menu-timeout 90000
 
 iseq ${ipxe_cloud_config} gce && goto gce ||
@@ -42,7 +42,7 @@ goto clouds_end
 
 
 set submenu-timeout ${menu-timeout}
-isset ${menu-default} || set menu-default item1
+isset ${menu-default} || set menu-default item7
 
 
 menu
