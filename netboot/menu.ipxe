@@ -39,7 +39,7 @@ set space:hex 20:20
 set space ${space:string}
 isset ${next-server} && menu ${site_name} v${version} - next-server: ${next-server} || menu ${site_name}
 item --gap Default:
-item local ${space} Boot from local hdd
+item local ${space} Boot from local hdd0
 item --gap Distributions:
 iseq ${menu_linux} 1 && item linux ${space} Linux Network Installs (64-bit) ||
 iseq ${menu_linux_i386} 1 && item linux-i386 ${space} Linux Network Installs (32-bit) ||
@@ -85,7 +85,7 @@ goto main_menu
 
 :local
 echo Booting from local disks ...
-exit 1
+sanboot --no-describe --drive 0x80
 
 :shell
 echo Type "exit" to return to menu.
