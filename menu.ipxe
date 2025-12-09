@@ -91,8 +91,8 @@ boot
 
 
 :item5
-kernel https://github.com/netbootxyz/ubuntu-squash/releases/download/24.04.3-dac09526/vmlinuz initrd=initrd ip=dhcp url=https://cdimage.ubuntu.com/ubuntu/releases/24.04.3/release/ubuntu-24.04.3-desktop-arm64.iso
-initrd https://github.com/netbootxyz/ubuntu-squash/releases/download/24.04.3-dac09526/initrd
+kernel https://github.com/netbootxyz/asset-mirror/releases/download/0.0.3-fb924c06/vmlinuz initrd=initrd ip=dhcp url=https://cdimage.ubuntu.com/ubuntu/releases/24.04.3/release/ubuntu-24.04.3-desktop-arm64.iso
+initrd https://github.com/netbootxyz/asset-mirror/releases/download/0.0.3-fb924c06/initrd
 boot
 #chain https://raw.githubusercontent.com/andykimpe1/ipxe-boot-menu/refs/heads/main/netboot/menu.ipxe
 
